@@ -17,7 +17,7 @@ Includes customizable step size, upper/lower bounds, option to allow/disallow ne
 ---
 
 ## Links
-- **GitHub Repository:** https://github.com/vikash4509/React-Counter-App.git
+- **GitHub Repository:** https://github.com/vp811077/react-counter-app.git
 - **Live Demo:** https://react-counter-app-myproject.netlify.app/
 
 ---
@@ -33,7 +33,7 @@ Includes customizable step size, upper/lower bounds, option to allow/disallow ne
 ## How to Run Locally
 - **Clone the repository**
 ```bash
-git clone https://github.com/vikash4509/React-Counter-App.git
+git clone https://github.com/vp811077/react-counter-app.git
 ```
 - **Navigate into the project folder**
 ```bash
@@ -108,5 +108,5 @@ npm start
 
 ## Author
 
-**Name:** Vikash Kumar Gupta  
+**Name:** VISHAL PATEL  
 **Date:** August 2025
