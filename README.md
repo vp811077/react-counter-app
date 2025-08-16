@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# React Counter App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Objective
+To develop a simple and interactive counter application using React that demonstrates:
+- State management using **useState**
+- Event handling
+- Conditional rendering
 
-## Available Scripts
+This project aims to build a strong foundation in React’s core concepts through practical implementation.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Brief Description
+A simple React counter app demonstrating state management, event handling, and conditional rendering.  
+Includes customizable step size, upper/lower bounds, option to allow/disallow negative values, and `localStorage` persistence.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Links
+- **GitHub Repository:** https://github.com/vikash4509/React-Counter-App.git
+- **Live Demo:** https://react-counter-app-myproject.netlify.app/
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6)**
+- **React.js**
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to Run Locally
+- **Clone the repository**
+```bash
+git clone https://github.com/vikash4509/React-Counter-App.git
+```
+- **Navigate into the project folder**
+```bash
+cd react-counter-app
+```
+- **Install dependencies**
+```bash
+npm install
+```
+- **Start the development server**
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Challenges Faced & Solutions
+- **Challenge:** Maintaining counter state after page reload  
+  **Solution:** Used `localStorage` to persist data.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Challenge:** Disabling buttons at bounds  
+  **Solution:** Conditional rendering & state checks.
 
-### `npm run eject`
+## Screenshots
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Image](https://github.com/user-attachments/assets/3ce80795-73d1-4133-8605-7008476976fd)
+*Screenshot showing the initial UI of the counter app with the counter display and control buttons.* 
+![Image](https://github.com/user-attachments/assets/05e77565-ebe5-4cff-b229-92a2e6000e11)
+*Screenshot demonstrating the increment (+) button working and increasing the counter value.* 
+![Image](https://github.com/user-attachments/assets/3970ccf8-86f2-4e65-8dfb-d4b83c7a4442)
+*Screenshot showing the decrement (-) button functioning correctly and decreasing the counter value.* 
+![Image](https://github.com/user-attachments/assets/7820e1eb-44ec-4496-9a7f-d2339692219d)
+*Screenshot illustrating the buttons (+ and -) disabled at the upper and lower bounds respectively to prevent exceeding limits.* 
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Feature List
+- Increment, decrement, reset counter value
+- Customizable step size
+- Upper/lower bounds with button disable
+- Toggle for allowing negative values
+- Dynamic text color based on state
+- Persist state with `localStorage`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Sample Input & Output
 
-## Learn More
+| Action              | Expected Output                   |
+|---------------------|---------------------------------|
+| Click +             | Counter increases by step size  |
+| Click -             | Counter decreases by step size  |
+| Change step size    | Increment/Decrement changes accordingly |
+| Reach upper bound   | + button disabled                |
+| Reach lower bound   | - button disabled                |
+| Toggle negative off | Counter min = 0                  |
+| Click reset         | Counter = 0                     |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Evaluation Criteria Mapping
 
-### Code Splitting
+| Criteria          | Status                               |
+|-------------------|------------------------------------|
+| Functionality     | ✅ All core features working as specified |
+| React Concepts    | ✅ Correct use of `useState`, event handling, conditional rendering |
+| UI/UX             | ✅ Clean layout, intuitive interface |
+| Edge Handling     | ✅ Bounds enforced, buttons disabled at limits |
+| Code Quality      | ✅ Modular, commented, readable    |
+| Bonus Features    | ✅ `localStorage` persistence, dynamic styling |
+| Deployment        | ✅ Ready for GitHub Pages, Vercel, or Netlify |
+| Documentation     | ✅ Complete README.md with all sections |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Name:** Vikash Kumar Gupta  
+**Date:** August 2025
